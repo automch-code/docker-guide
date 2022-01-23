@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  redis-server:
+    container_name: redis-server
+    image: 'redis'
+  node-app:
+    container_name: node-app
+    build: .
+    ports:
+      - 3000:3000
